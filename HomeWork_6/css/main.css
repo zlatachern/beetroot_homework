@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans';
+}
+.container {
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0 auto;
+}
+
+p,
+h1, 
+h2,
+h3,
+h4, 
+h5,
+h6,
+ul {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h3 { 
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  color: #070707;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+ul {
+  width: 496px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #070707;
+}
+
+a:hover {
+  color: #828282;
+}
+
+.line-header {
+  margin: 0 auto;
+  margin-top: 28px;
+  width: 970px;
+  border: 1px solid #828282;
+}
+
+.first-screen {
+  margin: 0 auto;
+  width: 970px;
+}
+
+h1 {
+  margin-top: 12px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 48px;
+  color: #070707;
+}
+
+.first-screen img {
+  width: 970px;
+}
+
+.about-me {
+  background: #F6F6F6;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.about-me h3 {
+  padding-top: 100px;
+}
+
+.text-about-me {
+  width: 480px;
+  margin: 0 auto;
+}
+
+.text-about-me p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.skills {
+  height: 564px;
+  margin: 0 auto;
+}
+
+.heading {
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.heading p {
+  margin-top: 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.product-list p {
+  width: 90px;
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #828282;
+  text-align: center;
+}
+
+.card-1 p,
+.card-2 p,
+.card-3 p {
+  margin-bottom: 60px;
+}
+
+.card-4 p {
+  margin-bottom: 80px;
+}
+
+.card-1, 
+.card-2, 
+.card-3, 
+.card-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio {
+  height: 2268px;
+  background: #E5E5E5;
+}
+
+.portfolio h3 {
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.page-portfolio {
+  text-align: center;
+}
+
+.page-portfolio p {
+  margin-top: 40px;
+}
+.fasion-store a {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.page-portfolio a {
+  display: block;
+  color: #070707;
+  cursor: pointer;
+}
+
+.reebok, .braun-portable {
+  margin-top: 70px;
+}
+
+footer {
+  height: 400px;
+}
+
+.contacts {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.text-contacts p {
+  margin-top: 20px;
+}
+.links {
+  margin-top: 60px;
+}
+
+button {
+  width: 180px;
+  height: 44px;
+  background: #070707;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.social-group {
+  width: 310px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links p {
+  color: #828282;
+  width: 180px;
+  margin: 0 auto;
+}
+
