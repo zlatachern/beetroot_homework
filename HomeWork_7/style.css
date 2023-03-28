@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Сolors for work */
+
+:root {
+  --header-bgcolor: #4A4F56;
+  --header-footer-text-color: #FF8984;
+  --main-bgcolor: #3B3F45;  
+  --bgcolor-list-dark-color: #7A7593;
+  --bgcolor-list-light-color: #88839E;
+  --bgcolor-list-click: #625E77;
+  --color-text-checked: #9B96AC;
+  --color-list-text: #fff;
+}
+
+/* A common part */
+
+body {
+  font-family: 'Roboto';
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1, h4, span {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container {
+  width: 793px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+main, footer {
+  background-color: var(--main-bgcolor);
+}
+
+header {
+  background-color: var(--header-bgcolor);
+  color: var(--header-footer-text-color);
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+main {
+  height: 500px;
+}
+
+/* Checkbox */
+
+.section-list {
+  width: 534px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.checkbox {
+  position: relative;
+  height: 60px;
+}
+
+.section-list .dark:nth-child(even) {
+  background-color: var(--bgcolor-list-dark-color);
+}
+
+.section-list .light:nth-child(odd) {
+  background-color: var(--bgcolor-list-light-color);
+}
+
+.checkbox__label {
+  padding-left: 60px;
+  color: var(--color-list-text);
+  cursor: pointer;
+}
+
+span {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.checkbox-text {
+  padding-top: 20px;
+}
+
+.checkbox__input {
+  margin-left: 20px;
+}
+
+/* Pseudo-classes and pseudo-elements */
+
+.bracket-left::before {
+  content: "(";
+}
+
+.bracket-right::after {
+  content: ")";
+}
+
+.checkbox__label:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 17px;
+  margin-left: 20px;
+  transition: background .1s linear, border .1s linear;
+}
+
+.checkbox__label:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("check.svg") no-repeat;
+  background-size: 17px 17px;
+  opacity: 0;
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  z-index: 2;
+  transition: opacity .1s linear;
+}
+
+.checkbox__input:checked + .checkbox__label:after {
+  opacity: 1;
+}
+
+.section-list .dark:nth-child(even):hover,
+.section-list .light:nth-child(odd):hover {
+  background-color: var(--bgcolor-list-click);
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.section-list .dark:nth-child(even):active,
+.section-list .light:nth-child(odd):active {
+  filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.45));
+}
+
+.section-list input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  text-decoration-color: var(--color-text-checked);
+  color: var(--color-text-checked);
+}
+
+/* Button part */
+
+.button-sbmt input {
+  width: 534px;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: var(--header-bgcolor);
+  color: var(--color-list-text);
+  border: transparent;
+  cursor: pointer;
+}
+
+/* A common part - footer */
+
+footer {
+  height: 120px;
+}
+
+
+
+
+
+
