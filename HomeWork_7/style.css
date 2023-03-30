@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
-/* Сolors for work */
+/* Цвета на странице */
 
 :root {
   --header-bgcolor: #4A4F56;
@@ -14,7 +13,7 @@
   --color-list-text: #fff;
 }
 
-/* A common part */
+/* Общая часть */
 
 body {
   font-family: 'Roboto';
@@ -24,10 +23,15 @@ body {
   padding-bottom: 20px;
 }
 
-h1, h4, span {
+h1, h4, span, li {
   margin: 0;
   padding-left: 0;
   padding-right: 0;
+  list-style-type: none;
+}
+
+span, li {
+  color: var(--color-list-text);
 }
 
 .container {
@@ -66,73 +70,70 @@ main {
   height: 500px;
 }
 
-/* Checkbox */
+/* Сам сheckbox */
 
-.section-list {
+ol {
   width: 534px;
-  padding-top: 30px;
+  padding: 40px 0 0 0;
   margin: 0 auto;
 }
 
-.checkbox {
-  position: relative;
-  height: 60px;
+li {
+  padding: 20px 0 0 20px;
 }
 
-.section-list .dark:nth-child(even) {
+.item {
+  position: relative;
+  height: 40px;
+}
+
+ol .even:nth-child(even) {
   background-color: var(--bgcolor-list-dark-color);
 }
 
-.section-list .light:nth-child(odd) {
+ol .odd:nth-child(odd) {
   background-color: var(--bgcolor-list-light-color);
 }
 
-.checkbox__label {
-  padding-left: 60px;
-  color: var(--color-list-text);
-  cursor: pointer;
-}
-
-span {
+.first-text-in-label {
+  padding-left: 25px;
   font-weight: 400;
   font-size: 18px;
 }
 
-.checkbox-text {
-  padding-top: 20px;
-}
+/* Псевдоклассы и псевдоэлементы */
 
-.checkbox__input {
-  margin-left: 20px;
-}
-
-/* Pseudo-classes and pseudo-elements */
-
+/* Стили для добавления левой скобки */
 .bracket-left::before {
   content: "(";
 }
 
+/* Стили для добавления правой скобки */
 .bracket-right::after {
   content: ")";
 }
 
-.checkbox__label:before {
+/* Стили для создания фонового прямоугольника для чекбокса */
+.checkbox__label::before {
   content: "";
   display: block;
   width: 25px;
   height: 25px;
-  border: 1px solid #ccc;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   z-index: 1;
-  margin-top: 17px;
-  margin-left: 20px;
-  transition: background .1s linear, border .1s linear;
+  margin: 17px 0 0 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+  transition: background 0.1s linear 0s, border 0.1s linear 0s;
 }
 
-.checkbox__label:after {
+/* Стили для создания и показа иконки галочки при выборе чекбокса */
+.checkbox__input:checked + .checkbox__label::after {
   content: "";
   display: block;
   width: 20px;
@@ -147,29 +148,37 @@ span {
   transition: opacity .1s linear;
 }
 
-.checkbox__input:checked + .checkbox__label:after {
+/* Стили для показа иконки галочки при выборе чекбокса */
+.checkbox__input:checked + .checkbox__label::after {
   opacity: 1;
 }
 
-.section-list .dark:nth-child(even):hover,
-.section-list .light:nth-child(odd):hover {
-  background-color: var(--bgcolor-list-click);
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
-}
-
-.section-list .dark:nth-child(even):active,
-.section-list .light:nth-child(odd):active {
-  filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.45));
-}
-
-.section-list input[type="checkbox"]:checked + label {
+/* Стили для добавления перечеркивания текста в label после выбора чекбокса */
+.checkbox__input:checked + .checkbox__label span {
   text-decoration: line-through;
   text-decoration-color: var(--color-text-checked);
   color: var(--color-text-checked);
 }
 
-/* Button part */
+/* Стили для изменения цвета скобок при выборе флажка */
+.checkbox__input:checked + .checkbox__label span .bracket-left,
+.checkbox__input:checked + .checkbox__label span .bracket-right {
+  color: var(--color-text-checked);
+}
+
+ol .even:nth-child(even):hover,
+ol .odd:nth-child(odd):hover {
+  background-color: var(--bgcolor-list-click);
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+ol .even:nth-child(even):active,
+ol .odd:nth-child(odd):active {
+  filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.45));
+}
+
+/* Кнопка */
 
 .button-sbmt input {
   width: 534px;
@@ -180,17 +189,16 @@ span {
   font-weight: 400;
   font-size: 18px;
   background-color: var(--header-bgcolor);
-  color: var(--color-list-text);
+  color: var(--header-footer-text-color);
   border: transparent;
   cursor: pointer;
 }
 
-/* A common part - footer */
+/* Продолжение общей части - footer */
 
 footer {
   height: 120px;
 }
-
 
 
 
