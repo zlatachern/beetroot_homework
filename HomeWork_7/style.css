@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Цвета на странице */
+
+:root {
+  --header-bgcolor: #4A4F56;
+  --header-footer-text-color: #FF8984;
+  --main-bgcolor: #3B3F45;  
+  --bgcolor-list-dark-color: #7A7593;
+  --bgcolor-list-light-color: #88839E;
+  --bgcolor-list-click: #625E77;
+  --color-text-checked: #9B96AC;
+  --color-list-text: #fff;
+}
+
+/* Общая часть */
+
+body {
+  font-family: 'Roboto';
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1, h4, span, li {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+}
+
+span, li {
+  color: var(--color-list-text);
+}
+
+.container {
+  width: 793px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+main, footer {
+  background-color: var(--main-bgcolor);
+}
+
+header {
+  background-color: var(--header-bgcolor);
+  color: var(--header-footer-text-color);
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+main {
+  height: 500px;
+}
+
+/* Сам сheckbox */
+
+ol {
+  width: 534px;
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+}
+
+li {
+  padding: 20px 0 0 20px;
+}
+
+.item {
+  position: relative;
+  height: 40px;
+}
+
+ol .even:nth-child(even) {
+  background-color: var(--bgcolor-list-dark-color);
+}
+
+ol .odd:nth-child(odd) {
+  background-color: var(--bgcolor-list-light-color);
+}
+
+.first-text-in-label {
+  padding-left: 25px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* Псевдоклассы и псевдоэлементы */
+
+/* Стили для добавления левой скобки */
+.bracket-left::before {
+  content: "(";
+}
+
+/* Стили для добавления правой скобки */
+.bracket-right::after {
+  content: ")";
+}
+
+/* Стили для создания фонового прямоугольника для чекбокса */
+.checkbox__label::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  margin: 17px 0 0 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+  transition: background 0.1s linear 0s, border 0.1s linear 0s;
+}
+
+/* Стили для создания и показа иконки галочки при выборе чекбокса */
+.checkbox__input:checked + .checkbox__label::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("check.svg") no-repeat;
+  background-size: 17px 17px;
+  opacity: 0;
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  z-index: 2;
+  transition: opacity .1s linear;
+}
+
+/* Стили для показа иконки галочки при выборе чекбокса */
+.checkbox__input:checked + .checkbox__label::after {
+  opacity: 1;
+}
+
+/* Стили для добавления перечеркивания текста в label после выбора чекбокса */
+.checkbox__input:checked + .checkbox__label span {
+  text-decoration: line-through;
+  text-decoration-color: var(--color-text-checked);
+  color: var(--color-text-checked);
+}
+
+/* Стили для изменения цвета скобок при выборе флажка */
+.checkbox__input:checked + .checkbox__label span .bracket-left,
+.checkbox__input:checked + .checkbox__label span .bracket-right {
+  color: var(--color-text-checked);
+}
+
+ol .even:nth-child(even):hover,
+ol .odd:nth-child(odd):hover {
+  background-color: var(--bgcolor-list-click);
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+ol .even:nth-child(even):active,
+ol .odd:nth-child(odd):active {
+  filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.45));
+}
+
+/* Кнопка */
+
+.button-sbmt input {
+  width: 534px;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: var(--header-bgcolor);
+  color: var(--header-footer-text-color);
+  border: transparent;
+  cursor: pointer;
+}
+
+/* Продолжение общей части - footer */
+
+footer {
+  height: 120px;
+}
+
+
+
+
+
