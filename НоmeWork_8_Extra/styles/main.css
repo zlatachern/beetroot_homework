@@ -8,21 +8,20 @@ body {
 }
 
 .container {
-  width: 1648px;
-  height: 821px;
+  max-width: 100%;
   margin: 0 auto;
   background-color: #3399CC;
   border: 30px solid #2B81AC;
+  height: 820px;
 }
 
 .heading-h3 {
   font-size: 21px;
   line-height: 25px;
-  margin: 66px 0 0 240px;
 }
 
 .container-box {
-  width: 1170px;
+  max-width: 90%;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -117,5 +116,4 @@ body {
 .section-text-down p {
   font-size: 16px;
   line-height: 19px;
-  margin: 30px 0 0 240px;
 }
