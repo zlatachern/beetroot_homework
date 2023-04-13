@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Tourney:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin-left: 350px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.content-box {
+  padding-top: 12px;
+}
+
+.content-text {
+  width: 300px;
+}
+
+.text-first-header {
+  font-family: 'Tourney';
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+}
+
+.text-secondary-header {
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.main {
+  margin-top: 120px;
+}
+
+.heading-h3 {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  position: relative; 
+  padding-left: 120px;
+}
+
+.heading-h3::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: -10px; 
+  width: 100px;
+  height: 8px;
+  margin-top: 20px;
+  background-color: #000; 
+}
+
+.cards {
+  border-top: 1px solid #c7c3c3;
+  border-bottom: 1px solid #c7c3c3;
+  width: 1200px;
+}
+
+.flip-card {
+  width: 270px;
+  height: 180px;
+  perspective: 1000px;
+  margin: 30px 10px 30px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateX(180deg);
+}

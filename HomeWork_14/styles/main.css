@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:wght@400;700&family=Staatliches&family=Tourney:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.heading-h2, .item-link, .external-link {
+  font-family: 'Francois One';
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: 350px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  background-color: #fff;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.content-box {
+  padding-top: 12px;
+}
+
+.content-text {
+  width: 300px;
+}
+
+.text-first-header {
+  font-family: 'Tourney';
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+}
+
+.text-secondary-header {
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.aside {
+  width: 450px;
+  margin-left: 320px;
+  position: sticky;
+  top: 80px; 
+}
+
+.aside-wrapper {
+  margin-top: 200px;
+}
+
+.item-list {
+  list-style: none;
+  margin-bottom: 80px;
+  border-bottom: 1px solid #b7b4b4;
+  padding-bottom: 10px;
+}
+
+.item-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main {
+  width: 780px;
+  margin-top: -530px;
+  position: relative;
+  left: 45%;
+}
+
+.main .heading-h2::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-top: -20px;
+  width: 100px;
+  height: 8px;
+  background-color: #000;
+}
+
+.mr-top-section {
+  margin-top: 70px;
+}
+
+.bg-image {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  margin-top: 140px;
+}
+
+.sup-text {
+  font-family: 'Farro';
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 10px;
+  vertical-align: top;
+  text-transform: none;
+}
+
+.section-p {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  margin-top: 40px;
+}
+
+.span-italic {
+  font-style: italic;
+}
+
+.span-decoration-underline {
+  text-decoration: underline;
+}
+
+.span-bold {
+  font-weight: bold;
+}
+
+.highlighted {
+  background-color: #cdc9c9;
+}
+
+.external-link {
+  color: #000;
+}
+
+.external-link:hover {
+  color: #b7b4b4;
+}
