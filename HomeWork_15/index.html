@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms_CSS</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main class="main d-flex">
+
+    <!-- First Form! -->
+    <form class="form">
+      <div class="form__container border-radius">
+        <h3 class="form__heading-h3">Create an Account</h3>
+
+        <!-- Form Full_Name -->
+          <div class="form__full-name d-flex">
+            <div class="form__controls">
+              <label class="form__label style__text" for="firstName">First Name</label>
+              <input class="form__input border-radius focusable" type="text" id="firstName" pattern="[^\d\s]+" title="Please enter letters only" required>
+            </div>
+            <div class="form__controls">
+              <label class="form__label style__text" for="lastName" >Last Name</label>
+              <input class="form__input border-radius style__text focusable" type="text" id="lastName" pattern="[^\d\s]+" title="Please enter letters only" required>
+            </div>
+          </div>
+
+          <!-- Form Email -->
+          <div class="form__email form__mg-top">
+            <div class="form__controls">
+              <label class="form__label style__text" for="Email">E-mail</label>
+              <input class="form__input border-radius em-width-input focusable" type="email" id="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+              <p class="form__text--email">We'll never share your email with anyone else.</p>
+            </div>
+          </div>
+          <div class="form__email form__mg-top">
+            <div class="radio__controls">
+              <label class="label__radio style__text">Male
+              <input class="input__radio" type="radio" name="Gender" required>
+              <span class="checkmark"></span>
+              </label>
+              <label class="label__radio style__text">Female
+                <input class="input__radio" type="radio" name="Gender" required>
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Form Residence! -->
+          <div class="form-residence form__mg-top d-flex">
+            <div class="form__select">
+            <label class="form__label style__text" for="selectCounty">Coutry</label>
+              <div class="select__wrapper">
+                <div class="select-arrow"></div>
+                <select class="select--primary border-radius style__text focusable" name="Country" id="selectCounty" required>
+                  <option value="" disabled selected>Selected</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="USA">USA</option>
+                  <option value="Poland">Poland</option>
+                </select>
+              </div>
+            </div>
+            <!-- Form City! -->
+            <div class="form__text">
+              <div class="form__controls">
+                <label class="form__label style__text" for="formCity">City</label>
+                <input class="form__input border-radius focusable" type="text" id="formCity" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button Submit and Text! -->
+          <div class="form__button form__mg-top">
+            <button class="button__submit button__style border-color" type="submit">Sign Up</button>
+          </div>
+          <p class="text__privacy">By clicking the 'Sign Up' button, you confirm that you accept our <br> <a class="link__privacy link--color" href="">Terms of Use</a> and <a class="link__privacy link--color" href="">Privacy Policy</a>.
+          </p>
+          <div class="text__log--in form__mg-top">
+            <a class="link__account style__text" href="">Have an account?</a>
+            <a class="link__log--in link--color" href="">Log In</a>
+          </div>
+      </div>
+    </form>
+
+    <!-- Second Form! -->
+    <form>
+      <div class="form__container border-radius">
+        <h3 class="form__heading-h3">Profile</h3>
+
+        <!-- Form Upload_Avatar! -->
+        <div class="form__avatar">
+          <img src="img/image.svg" alt="">
+          <label class="label__file border-radius border-color" for="file__input"></label>
+          <input class="form__file border-radius border-color" type="file" id="file__input" >
+          <button type="reset" class="button__reset border-radius border-color focusable"></button>
+        </div>
+
+        <!-- Form Name and Email! -->
+        <div class="form__full-name d-flex form__mg-top">
+          <div class="form__controls">
+            <label class="form__label style__text" for="firstNameProfile">First Name</label>
+            <input class="form__input border-radius focusable" type="text" id="firstNameProfile" pattern="[^\d\s]+" title="Please enter letters only" required>
+          </div>
+          <div class="form__controls form__mg-right">
+            <label class="form__label style__text" for="emailProfile">Email</label>
+            <input class="form__input border-radius style__text focusable" type="text" id="emailProfile" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+          </div>
+        </div>
+
+        <!-- Form Residence! -->
+        <div class="form-residence d-flex form__mg-top">
+          <div class="form__select">
+          <label class="form__label style__text" for="selectCountyProfile">Coutry</label>
+            <div class="select__wrapper">
+              <div class="select-arrow"></div>
+              <select class="select--primary border-radius style__text focusable" name="Country" id="selectCountyProfile" required>
+                <option value="" disabled selected>Selected</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="USA">USA</option>
+                <option value="Poland">Poland</option>
+              </select>
+            </div>
+          </div>
+          <!-- Form City! -->
+          <div class="form__text">
+            <div class="form__controls">
+              <label class="form__label style__text" for="formCityProfile">City</label>
+              <input class="form__input border-radius focusable" type="text" id="formCityProfile" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Zip-Code and Tel! -->
+        <div class="form__zip--tel d-flex form__mg-top">
+          <div class="form__controls">
+            <label class="form__label style__text" for="zipCode">Zip Code</label>
+            <input class="form__input border-radius focusable" type="text" id="zipCode" pattern="^\d{1,10}$" title="Please enter numbers only up to 10" required>
+          </div>
+          <div class="form__controls form__mg-left">
+            <label class="form__label style__text" for="phoneNum">Phone Number</label>
+            <input class="form__input border-radius style__text focusable" type="tel" id="phoneNum" required>
+          </div>
+        </div>
+
+        <!-- Button Update! -->
+        <div class="form__button form__mg-top">
+          <button class="button__update button__style border-color" type="submit">Update</button>
+        </div>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
