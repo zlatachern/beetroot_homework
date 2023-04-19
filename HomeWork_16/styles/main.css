@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Quicksand:wght@500&family=Roboto:wght@400;500&display=swap');
+
+.color-blue {
+  color: #16133D;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.bg-color {
+  background-color: #16133D;
+}
+
+.fweight400 {
+  font-weight: 400;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.padding-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.jst-content-space-btw {
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-family: 'Quicksand';
+  margin-left: 13px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.main {
+  font-family: 'Roboto';
+  margin: 135px 0 100px 0;
+}
+
+.heading-h2 {
+  font-size: 16px;
+  line-height: 21px;
+  color: #7690A8;
+  margin: 0;
+}
+
+.heading-h1 {
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+  margin: 12px 0 40px 0;
+}
+
+.item__card {
+  width: 370px;
+  border: 1px solid #E5EAF4;
+  border-radius: 8px;
+}
+
+.item__card:hover {
+  border-color: #3DB370;
+}
+
+.item__card:hover,
+.layer-light-blue {
+  fill: #E1F4F5;
+}
+
+.item__card:hover
+.layer-middle-blue {
+  fill: #CAEFF2;
+}
+
+.item__card:hover
+.layer-lighten-green {
+  fill: #F4FEFF;
+}
+
+.item__card:hover
+.layer-lighten-blue {
+  fill: #E8F3FF;
+}
+
+.item__card:hover
+.layer-dark-blue {
+  fill: #52C29D;
+}
+
+.svg {
+  width: 44px;
+  padding: 14px;
+  height: 44px;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+}
+
+.item__card-content {
+  width: 290px;
+  padding: 40px;
+}
+
+.item-card__heading-h3 {
+  font-size: 24px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+.item-card__paragraphe {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 0 30px;
+}
+
+.item-card__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3DB370;
+  text-decoration: none;
+}
+
+.icon-footer {
+  width: 230px;
+}
+
+.link__svg {
+  width: 38px;
+  height: 38px;
+  background-color: #EFEEF3;
+  border-radius: 5px;
+}
+
+.link__svg--fill {
+  fill: #000;
+}
+
+.link__svg:hover .link__svg--fill {
+  fill: #3DB370;
+}
