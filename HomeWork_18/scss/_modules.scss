@@ -1,0 +1,126 @@
+@use 'helpers' as *;
+
+// Hide the checkbox
+#menu__toggle {
+  opacity: 0;
+}
+
+// Stylize the button
+.menu__btn {
+  display: flex;
+  align-items: center; 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+// Add "hamburger" 
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $colorBlack;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: 8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 16px;
+}
+
+//Elements menu
+
+// Container Nav
+.nav{
+  position: absolute;
+  visibility: hidden;
+  top: -300%;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  padding: 20px 0 30px 0;
+  text-align: center;
+  background-color: #fff;
+  z-index: -1;
+  &-link {
+    position: relative;
+    transition: color 0.25s;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 1px;
+      background-color: $colorBlack;
+      bottom: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+  }
+}
+
+.nav-item:hover>.nav-link{
+  color: $colorBlack;
+}
+.nav-link:hover::before{
+  opacity: 1;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(-45deg);
+  transform-origin: right top 0;
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  width: 0;
+  top: 0;
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .nav{
+  visibility: visible;
+  top: 90px;
+}
+
+//Button
+
+.btn--primary {
+  background-color: $colorDarkGrey;
+  color: #fff;
+  border: transparent;
+  @include fontsStyleLato (700, 16px, 27px, 0.1em);
+  width: 180px;
+}
+
+.box-info {
+  &__text-one {
+    width: 470px;
+    @include fontsStyleRedHat (400, 23px, 38px, 0.1em);
+    color: $colorBlack;
+    &__arrow {
+      color: $colorLightGrey;
+    }
+  }
+  &__text-two {
+    width: 470px;
+    @include fontsStyleLato (400, 19px, 32px, 0.05em);
+    color: $colorDarkGrey;
+  }
+}
+

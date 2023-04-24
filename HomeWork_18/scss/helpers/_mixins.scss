@@ -1,0 +1,16 @@
+//Fonts-style
+@mixin fontsStyleRedHat ($fontW, $fontSize, $LineHeight, $letterSpas){
+  font-family: 'Red Hat Display';
+  font-weight: $fontW;
+  font-size: $fontSize;
+  line-height: $LineHeight;
+  letter-spacing: $letterSpas;
+}
+
+@mixin fontsStyleLato ($fontW, $fontSize, $LineHeight, $letterSpas){
+  font-family: 'Lato';
+  font-weight: $fontW;
+  font-size: $fontSize;
+  line-height: $LineHeight;
+  letter-spacing: $letterSpas;
+}
