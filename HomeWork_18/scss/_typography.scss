@@ -1,0 +1,61 @@
+@use 'helpers' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display:wght@400;500;600&display=swap');
+
+.heading-h1 {
+  @include fontsStyleRedHat (600, 48px, 64px, 0.05em);
+  color: $colorBlack;
+  max-width: 770px;
+  position: absolute;
+  left: 230px;
+  top: 100px;
+}
+
+.nav-link {
+  @include fontsStyleLato (400, 14px, 17px, 0.3em);
+  color: $colorBlack;
+}
+
+.heading-h2 {
+  @include fontsStyleRedHat (400, 48px, 64px, 0.05em);
+  color: $colorBlack;
+}
+
+.heading-h3 {
+  @include fontsStyleRedHat (500, 23px, 38px, 0.1em);
+  color: $colorBlack;
+}
+
+.heading-h4 {
+  @include fontsStyleRedHat (600, 28px, 46px, 0.1em);
+  color: $colorBlack;
+}
+
+.heading-h5 {
+  @include fontsStyleLato (400, 16px, 27px, 0.1em);
+  color: $colorLightGrey;
+}
+
+.subtitles {
+  @include fontsStyleLato (400, 16px, 27px, 0.1em);
+  color: $colorLightGrey;
+}
+
+.text--paragrapher {
+  @include fontsStyleLato (400, 16px, 27px, 0.05em);
+  color: $colorDarkGrey;
+}
+
+.addit__text {
+  @include fontsStyleLato (400, 16px, 27px, 0.1em);
+  color: $colorLightGrey;
+}
+
+.card-title {
+  @include fontsStyleRedHat (500, 22px, 37px, 0.1em);
+  color: $colorBlack;
+}
+
+.copyright-text {
+  @include fontsStyleLato (400, 12px, 20px, 0.1em);
+}
