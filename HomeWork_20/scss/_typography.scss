@@ -1,0 +1,33 @@
+@use 'helpers' as *;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display:wght@400;600&display=swap');
+
+.header__heading-h4 {
+  @include fontStyleHeading (400, 16px, 24px, 0.5em, 'Lato');
+}
+
+.heading-h1 {
+  @include fontStyleHeading(600, 48px, 64px, 0.05em, 'Red Hat Display');
+}
+
+.heading-h2 {
+  @include fontStyleHeading(600, 28px, 46px, 0.1em, 'Red Hat Display');
+  margin-bottom: 50px;
+}
+
+.heading-h5 {
+  @include fontStyleHeading (400, 16px, 27px, 0.1em, 'Lato');
+}
+
+.paragraphe-fstyle {
+  @include fontStyleParagraphe;
+}
+
+.footer__copyright-text {
+  color: $color--primary;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 24px 0 0 0;
+}

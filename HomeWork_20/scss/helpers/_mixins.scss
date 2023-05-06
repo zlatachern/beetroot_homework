@@ -1,0 +1,34 @@
+@use 'variables' as *;
+
+//Fonts
+
+@mixin fontStyleHeading ($fWeight, $fSize, $lHeight, $lspacing, $fontFam) {
+  color: $color--primary;
+  font-weight: $fWeight;
+  font-size: $fSize;
+  line-height: $lHeight;
+  letter-spacing: $lspacing;
+  font-family: $fontFam;
+}
+
+@mixin fontStyleParagraphe {
+  color: $color-secondary;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+}
+
+@mixin LinkStyle ($fWeight, $fSize, $lHeight, $lspacing, $fontFam){
+    color: $color--primary;
+    font-weight: $fWeight;
+    font-size: $fSize;
+    line-height: $lHeight;
+    letter-spacing: $lspacing;
+    font-family: $fontFam;
+}
+
+@mixin d-flex {
+  display: flex;
+  justify-content: space-between;
+}
