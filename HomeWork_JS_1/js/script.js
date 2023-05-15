@@ -47,7 +47,7 @@ alert('Привіт' + ' ' + userName + '!');
 const birthYear = prompt('Введіть свій рік народження:');
 const currentYear = 2023;
 let ageUser = currentYear - (Number(birthYear));
-alert("Ваш вік: " + ageUser);
+alert('Ваш вік: ' + (Number(ageUser)) );
 console.log(typeof ageUser);
 
 
@@ -55,7 +55,7 @@ console.log(typeof ageUser);
 
 const sideLength = prompt('Введіть довжину сторони квадрата:');
 let perimeter = (Number(sideLength)) * 4;
-alert('Периметр квадрата ' + perimeter);
+alert('Периметр квадрата ' + (Number(perimeter)) );
 console.log(typeof perimeter);
 
 // Максимум
@@ -64,7 +64,7 @@ console.log(typeof perimeter);
 
 const radius = prompt('Введіть радіус кола:');
 let area = Math.PI * Math.pow(radius, 2);
-alert('Площа кола: ' + area);
+alert('Площа кола: ' + (Number(area)) );
 console.log(typeof area);
 
 // Запитай у користувача відстань в кілометрах між двома містами і за скільки годин він хоче дістатися. Порахуй швидкість, з якою необхідно рухатися, щоб встигнути вчасно.
@@ -72,7 +72,7 @@ console.log(typeof area);
 const distance = prompt('Введіть відстань між містами (в кілометрах):');
 const time = prompt('Введіть бажаний час подорожі (в годинах):');
 let speed = (Number(distance)) / (Number(time));
-alert('Необхідна швидкість: ' + speed + ' км/год');
+alert('Необхідна швидкість: ' + (Number(speed)) + ' км/год');
 console.log(typeof speed);
 
 // Реалізуй конвертор валют. Користувач вводить долари, програма переводить їх в євро. Курс валют зберігається в константі.
@@ -80,5 +80,5 @@ console.log(typeof speed);
 const dollarAmount = prompt('Введіть суму в доларах:');
 const exchangeRate = 0.9216; // Курс долара до євро
 let euroAmount = (Number(dollarAmount)) * exchangeRate;
-alert('Сума в євро: ' + euroAmount);
+alert('Сума в євро: ' + (Number(euroAmount)) );
 console.log(typeof euroAmount);
