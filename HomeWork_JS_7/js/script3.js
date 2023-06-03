@@ -17,3 +17,6 @@ function changeLight() {
 
   document.getElementById(newColor).classList.add(newColor);
 }
+
+const switchButton = document.getElementById("switchButton");
+switchButton.addEventListener("click", changeLight);

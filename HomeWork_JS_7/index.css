@@ -14,7 +14,7 @@
   background-color: cadetblue;
 }
 
-.close-span {
+.close--span {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;

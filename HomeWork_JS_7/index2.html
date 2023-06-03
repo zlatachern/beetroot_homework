@@ -10,15 +10,15 @@
 <body>
 
   <!-- Ex. 2 -->
-  <button class="button--primary" onclick="openModal()">Open</button>
+  <button class="button--primary" id="openButton">Open</button>
 
   <!-- Modal Window -->
   <div id="myModal" class="modal__box">
     <div class="modal__content">
-        <span class="close-span" onclick="closeModal()">&times;</span>
+        <span class="close--span">&times;</span>
         <h2>Modal window</h2>
         <img class="img__modal" src="img/sticker.png" alt="">
-        <button class="button--primary position" onclick="closeModal()">Close</button>
+        <button class="button--primary position" id="closeButton">Close</button>
     </div>
 </div>
 
